@@ -6,7 +6,7 @@ const Blog = () => {
   window.addEventListener("scroll", () => {
     const scrollHeight = window.pageYOffset;
     const blog = document.querySelectorAll(".team-cont-inner");
-    team.forEach((item) => {
+    blog.forEach((item) => {
       const blogHeight = item.getBoundingClientRect().height;
 
       if (scrollHeight > blogHeight) {
