@@ -128,11 +128,11 @@ const Navbar = () => {
           <div className="socials2">
             <div className="detail2">
               <FaPhone className="ico" />
-              <p>1(800) 123-12345</p>
+              <p>+234 9157 614 370</p>
             </div>
             <div className="detail2">
               <FaEnvelope className="ico" />
-              <p>help.weldcentral@gmail.com</p>
+              <p>ebubeoffor2025@gmail.com</p>
             </div>
           </div>
         </ul>

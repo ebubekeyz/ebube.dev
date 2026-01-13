@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Wrapper = styled.div`
   .breadcrumb {
@@ -7,7 +7,7 @@ const Wrapper = styled.div`
     left: 0;
     z-index: -200;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url('/breadcrumb.jpg') center/cover no-repeat;
+      url("/bg4.jpg") center/cover no-repeat;
     width: 100%;
     height: 250px;
   }
