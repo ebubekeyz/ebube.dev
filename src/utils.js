@@ -1,0 +1,465 @@
+import { nanoid } from "nanoid";
+import axios from "axios";
+
+let productionUrl =
+  process.env.NODE_ENV !== "production"
+    ? "http://localhost:7000/api"
+    : "https://weldcentral.onrender.com/api";
+
+export const customFetch = axios.create({
+  baseURL: productionUrl,
+});
+
+export const list = [
+  {
+    id: nanoid(),
+    image: "/bg1.jpg!w700wp",
+    name: "View Portfolio",
+    title: "Building Scalable Web Experiences from Front to Back",
+    quote:
+      "I design and develop modern, high-performance applications using clean UI, robust backend systems, and scalable architectures.",
+    link1: "/about",
+  },
+  {
+    id: nanoid(),
+    image: "/bg2.jpg",
+    name: "My Services",
+    title: "Frontend Development That Engages Users",
+    quote:
+      "Crafting responsive, accessible, and visually compelling interfaces with React, Next.js, and modern UI frameworks.",
+    link1: "/services",
+  },
+  {
+    id: nanoid(),
+    image: "/bg3.jpg",
+    name: "Explore Solutions",
+    title: "Powerful Backend Systems & APIs",
+    quote:
+      "Designing secure, efficient server-side applications with Node.js, REST APIs, authentication, and database integration.",
+    link1: "/services",
+  },
+  {
+    id: nanoid(),
+    image: "/bg4.jpg",
+    name: "See Expertise",
+    title: "Full-Stack Solutions Built for Growth",
+    quote:
+      "From idea to deployment, I build end-to-end solutions that scale with your business needs.",
+    link1: "/services",
+  },
+  {
+    id: nanoid(),
+    image: "/bg6.png",
+    name: "Learn More",
+    title: "Secure, Reliable & Performance-Focused Applications",
+    quote:
+      "Emphasizing clean code, security best practices, and optimized performance across the entire stack.",
+    link1: "/services",
+  },
+  {
+    id: nanoid(),
+    image: "/bg7.jpg",
+    name: "My Approach",
+    title: "Turning Complex Problems into Elegant Solutions",
+    quote:
+      "I combine technical expertise with problem-solving to deliver solutions that are both functional and intuitive.",
+    link1: "/services",
+  },
+  {
+    id: nanoid(),
+    image: "/bg8.jpg",
+    name: "Start a Project",
+    title: "Let’s Build Something Impactful Together",
+    quote:
+      "Collaborate with a full-stack developer focused on quality, scalability, and long-term success.",
+    link1: "/services",
+  },
+  {
+    id: nanoid(),
+    image: "/bg9.jpg",
+    name: "Get in Touch",
+    title: "From Concept to Production-Ready Software",
+    quote:
+      "Delivering complete web solutions — design, development, deployment, and ongoing improvement.",
+    link1: "/services",
+  },
+];
+
+export const services = [
+  {
+    id: nanoid(),
+    image: "/frontend.jpg",
+    title: "Frontend Development",
+    text: "Building responsive, accessible, and visually engaging user interfaces using React, Next.js, and modern CSS frameworks.",
+  },
+  {
+    id: nanoid(),
+    image: "/backend.png",
+    title: "Backend Development",
+    text: "Developing secure and scalable server-side applications with Node.js, RESTful APIs, authentication, and business logic.",
+  },
+  {
+    id: nanoid(),
+    image: "/api.jpg",
+    title: "API Design & Integration",
+    text: "Designing and integrating REST and third-party APIs to enable seamless communication between frontend and backend systems.",
+  },
+  {
+    id: nanoid(),
+    image: "/database.webp",
+    title: "Database Management",
+    text: "Designing and managing efficient databases using MongoDB or PostgreSQL, ensuring data integrity, performance, and scalability.",
+  },
+  {
+    id: nanoid(),
+    image: "/fullstack.png",
+    title: "Full-Stack Web Applications",
+    text: "Delivering end-to-end web solutions—from concept and architecture to deployment and maintenance.",
+  },
+  {
+    id: nanoid(),
+    image: "/maintenance.png",
+    title: "Maintenance and Optimization",
+    text: "Providing ongoing support, performance optimization, bug fixes, and feature enhancements for existing applications.",
+  },
+];
+
+export const menu = [
+  {
+    id: 1,
+    title: "JavaScript",
+    category: "frontend",
+    price: 0,
+    img: "/javascript.png",
+    desc: "Core Web Language",
+    text: "JavaScript is the foundation of modern web development. I use it to build interactive user interfaces, handle application logic, and power both frontend and backend systems.",
+    name: "javascript",
+  },
+  {
+    id: 2,
+    title: "TypeScript",
+    category: "frontend",
+    price: 0,
+    img: "/typescript.jpg",
+    desc: "Typed JavaScript",
+    text: "TypeScript enhances JavaScript with static typing, improving code quality, scalability, and maintainability in large applications.",
+    name: "typescript",
+  },
+  {
+    id: 3,
+    title: "React",
+    category: "frontend",
+    price: 0,
+    img: "/react.jpg",
+    desc: "UI Library",
+    text: "React allows me to build fast, reusable, and component-based user interfaces with a focus on performance and maintainability.",
+    name: "react",
+  },
+  {
+    id: 4,
+    title: "Next.js",
+    category: "frontend",
+    price: 0,
+    img: "/next.jpg",
+    desc: "React Framework",
+    text: "Next.js enables server-side rendering, static generation, and optimized performance for production-ready React applications.",
+    name: "nextjs",
+  },
+  {
+    id: 5,
+    title: "Node.js",
+    category: "backend",
+    price: 0,
+    img: "/node.png",
+    desc: "Backend Runtime",
+    text: "Node.js allows me to build fast, scalable server-side applications and APIs using JavaScript.",
+    name: "nodejs",
+  },
+  {
+    id: 6,
+    title: "Express.js",
+    category: "backend",
+    price: 0,
+    img: "/express.png",
+    desc: "Backend Framework",
+    text: "Express.js helps me design clean, efficient REST APIs with proper routing, middleware, and authentication.",
+    name: "express",
+  },
+  {
+    id: 7,
+    title: "MongoDB",
+    category: "database",
+    price: 0,
+    img: "/mongodb.png",
+    desc: "NoSQL Database",
+    text: "MongoDB provides flexible and scalable data storage for modern applications, especially when working with dynamic data.",
+    name: "mongodb",
+  },
+  {
+    id: 8,
+    title: "POSTGRESQL",
+    category: "database",
+    price: 0,
+    img: "/postgresql.png",
+    desc: "Relational Databases",
+    text: "I work with POSTGRESQL databases to design structured schemas, manage relationships, and ensure data integrity.",
+    name: "sql",
+  },
+  {
+    id: 9,
+    title: "Git & GitHub",
+    category: "tools",
+    price: 0,
+    img: "/git.png",
+    desc: "Version Control",
+    text: "Git and GitHub are essential for collaboration, version control, and maintaining clean development workflows.",
+    name: "git",
+  },
+  {
+    id: 10,
+    title: "REST APIs",
+    category: "backend",
+    price: 0,
+    img: "/rest.webp",
+    desc: "API Architecture",
+    text: "I design and consume RESTful APIs that enable seamless communication between frontend and backend services.",
+    name: "api",
+  },
+  {
+    id: 11,
+    title: "HTML & CSS",
+    category: "frontend",
+    price: 0,
+    img: "/HTML.webp",
+    desc: "Web Foundations",
+    text: "HTML and CSS form the backbone of web design, ensuring semantic structure, accessibility, and responsive layouts.",
+    name: "html-css",
+  },
+  {
+    id: 12,
+    title: "Deployment & DevOps",
+    category: "tools",
+    price: 0,
+    img: "/netlify.jpg",
+    desc: "Production Deployment",
+    text: "I deploy applications using modern hosting platforms, manage environments, and ensure applications are production-ready.",
+    name: "deployment",
+  },
+];
+
+export const team = [
+  {
+    id: 1,
+    name: "Nicholas Putnam",
+    title: "controller",
+    img: "/team1.jpg",
+    text: "A seasoned welder with over a decade of experience, combines technical skill with a passion for precision.",
+    link: "/",
+    profile: [
+      {
+        id: "recAGJfiU4CeaV0HL",
+        order: 3,
+        title: "Biography",
+        dates: "December 2015 - Present",
+        duties: [
+          "A seasoned welder with over a decade of experience, combines technical skill with a passion for precision.",
+          "From high-rise construction projects to intricate metal art, Nicholas's expertise spans a diverse array of welding techniques and materials.",
+          "Known for his meticulous attention to detail and unwavering commitment to safety, he consistently delivers exceptional results.",
+          "His dedication to his craft and his ability to adapt to complex challenges make him a valued team member and a trusted professional in the field.",
+          "When Nicholas isn’t welding, he’s often sharing his knowledge with aspiring welders or exploring new advancements in welding technology.",
+        ],
+        company: "BIOGRAPHY",
+      },
+      {
+        id: "recIL6mJNfWObonls",
+        order: 2,
+        title: "Skills",
+        dates: "May 2015 - December 2015",
+        duties: [
+          "Technical Proficiency: Understanding various welding techniques and processes such as MIG, TIG, Stick, and flux-cored welding.",
+          "Metalworking Skills: Knowledge of different metals and their properties, including steel, aluminum, and stainless steel.",
+          "Blueprint Reading: Ability to read and interpret blueprints, schematics, and technical drawings to understand project requirements.",
+          "Precision and Accuracy: Skills to ensure welds are clean, accurate, and meet specified dimensions and standards.",
+          "Safety Awareness: Knowledge of and adherence to safety protocols to prevent accidents and handle equipment safely.",
+          "Equipment Maintenance: Ability to maintain and troubleshoot welding equipment to ensure optimal performance.",
+          "Hand-Eye Coordination: Good coordination for controlling the welding torch or electrode and ensuring precise welds.",
+          "Problem-Solving: Capability to identify issues and find solutions, whether in welding techniques or material handling.",
+          "Physical Stamina: The job often involves standing for long periods, lifting heavy materials, and working in various positions.",
+          "Attention to Detail: Focus on the quality of the work, ensuring that welds are strong and free from defects.",
+        ],
+        company: "SKILLS",
+      },
+      {
+        id: "rec61x18GVY99hQq5",
+        order: 1,
+        title: "Contact",
+        dates: "May 2014 - September 2015",
+        duties: ["Email: nicholas@gmail.com", "Phone: +1 3344 345 3455"],
+        company: "CONTACT",
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "Richard Williams",
+    title: "Welder",
+    img: "/team2.jpg",
+    text: "A dynamic welder with over eight years of hands-on experience in the field, renowned for her innovative approach and exceptional skill.",
+    link: "/",
+    profile: [
+      {
+        id: "recAGJfiU4CeaV0HL",
+        order: 3,
+        title: "Biography",
+        dates: "December 2015 - Present",
+        duties: [
+          "A dynamic welder with over eight years of hands-on experience in the field, renowned for his innovative approach and exceptional skill.",
+          "Specializing in both MIG and TIG welding, Richard's excels in delivering flawless results on everything from automotive repairs to large-scale industrial projects.",
+          "His meticulous craftsmanship and commitment to quality have earned him recognition as a reliable and creative problem-solver.",
+          "Passionate about his trade, Richard constantly seeks to refine his techniques and embrace new technologies, making him a standout in the welding community and a crucial asset to any team he joins.",
+        ],
+        company: "BIOGRAPHY",
+      },
+      {
+        id: "recIL6mJNfWObonls",
+        order: 2,
+        title: "Skills",
+        dates: "May 2015 - December 2015",
+        duties: [
+          "Patience and Concentration: Patience to work on intricate tasks and concentration to avoid mistakes during the welding process.",
+          "Adaptability: Flexibility to work on different types of projects and with varying materials and techniques.",
+          "Communication Skills: Ability to communicate effectively with team members, supervisors, and clients regarding project specifications and issues.",
+          "Mathematical Skills: Basic math skills for measuring, calculating angles, and determining material quantities.",
+          "Attention to Detail: Focus on the quality of the work, ensuring that welds are strong and free from defects.",
+        ],
+        company: "SKILLS",
+      },
+      {
+        id: "rec61x18GVY99hQq5",
+        order: 1,
+        title: "Contact",
+        dates: "May 2014 - September 2015",
+        duties: ["Email: richardwilliams@gmail.com", "Phone: +1 345 345 3456"],
+        company: "CONTACT",
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: "David Blankenship",
+    title: "Locksmith",
+    img: "/team3.jpg",
+    text: "A highly skilled welder with over 15 years of experience in the trade, known for his expertise in both structural and pipe welding.",
+    link: "/",
+    profile: [
+      {
+        id: "recAGJfiU4CeaV0HL",
+        order: 3,
+        title: "Biography",
+        dates: "December 2015 - Present",
+        duties: [
+          "A highly skilled welder with over 15 years of experience in the trade, known for his expertise in both structural and pipe welding.",
+          "His hands-on approach and deep understanding of various welding processes make him adept at handling complex projects with precision.",
+          "David's reputation for reliability and craftsmanship is matched by his dedication to safety and continuous improvement.",
+          "Outside of work, he enjoys mentoring younger welders, sharing his extensive knowledge, and staying updated with the latest industry advancements, reflecting his passion for both the craft and the community.",
+        ],
+        company: "BIOGRAPHY",
+      },
+      {
+        id: "recIL6mJNfWObonls",
+        order: 2,
+        title: "Skills",
+        dates: "May 2015 - December 2015",
+        duties: [
+          "Heat Management: The ability to control and manage the heat generated during welding to avoid warping or damaging the materials being welded. This includes understanding heat settings and cooling methods to ensure high-quality welds and structural integrity.",
+          "Mathematical Skills: Basic math skills for measuring, calculating angles, and determining material quantities.",
+          "Communication Skills: Ability to communicate effectively with team members, supervisors, and clients regarding project specifications and issues.",
+          "Adaptability: Flexibility to work on different types of projects and with varying materials and techniques.",
+        ],
+        company: "SKILLS",
+      },
+      {
+        id: "rec61x18GVY99hQq5",
+        order: 1,
+        title: "Contact",
+        dates: "May 2014 - September 2015",
+        duties: ["Email: davidblankenship@gmail.com", "Phone: +1 356 3556 366"],
+        company: "CONTACT",
+      },
+    ],
+  },
+];
+
+export const blog = [
+  {
+    id: 1,
+    featured: true,
+    name: "Ebube Joseph Offor",
+    category: "Frontend Development",
+    title: "Getting Started with React.js: Building Your First App",
+    img: "/gs.jpg",
+    text: "A beginner-friendly guide to building interactive UIs with React.js, covering components, state management, and props.",
+    desc: `<p>React.js is a powerful library for building dynamic user interfaces. This guide covers the basics of creating reusable components, managing state, and passing props effectively. By the end, you'll be able to build your first interactive web application and understand how React's virtual DOM and lifecycle methods work.</p>`,
+    link: "/blog/react-intro",
+  },
+  {
+    id: 2,
+    featured: true,
+    name: "Ebube Joseph Offor",
+    category: "Backend Development",
+    title: "Mastering Node.js and Express for Full-Stack Applications",
+    img: "/ms.jpg",
+    text: "Learn how to build scalable backend APIs using Node.js and Express, integrate databases, and implement RESTful endpoints.",
+    desc: `<p>Node.js and Express allow developers to build fast and scalable backend services. This article explains how to set up servers, manage routing, connect to databases, and design RESTful APIs. We'll also cover middleware, error handling, and authentication. By the end, you'll be ready to create production-ready backend systems for full-stack projects.</p>`,
+    link: "/blog/node-backend",
+  },
+  {
+    id: 3,
+    featured: true,
+    name: "Ebube Joseph Offor",
+    category: "Programming",
+    title: "TypeScript Tips for Cleaner and Safer Code",
+    img: "/tips.jpg",
+    text: "Enhance your JavaScript projects with TypeScript for better type safety, maintainability, and developer productivity.",
+    desc: `<p>TypeScript adds static typing to JavaScript, helping developers catch errors before runtime. We'll cover types, interfaces, enums, and generics, and discuss integrating TypeScript with React and Node.js projects. Learn how TypeScript improves code readability, maintainability, and confidence in full-stack applications.</p>`,
+    link: "/blog/typescript-tips",
+  },
+];
+
+export const profile = [
+  {
+    id: "recAGJfiU4CeaV0HL",
+    order: 3,
+    title: "Nicholas",
+    dates: "December 2015 - Present",
+    duties: [
+      "A seasoned welder with over a decade of experience, combines technical skill with a passion for precision. From high-rise construction projects to intricate metal art, Jake's expertise spans a diverse array of welding techniques and materials. Known for his meticulous attention to detail and unwavering commitment to safety, he consistently delivers exceptional results. His dedication to his craft and his ability to adapt to complex challenges make him a valued team member and a trusted professional in the field. When Jake isn’t welding, he’s often sharing his knowledge with aspiring welders or exploring new advancements in welding technology.",
+    ],
+    company: "BIOGRAPHY",
+  },
+  {
+    id: "recIL6mJNfWObonls",
+    order: 2,
+    title: "Consultant",
+    dates: "May 2015 - December 2015",
+    duties: [
+      "Hashtag drinking vinegar scenester mumblecore snackwave four dollar toast, lumbersexual XOXO. Cardigan church-key pabst, biodiesel vexillologist viral squid.",
+      "Franzen af pitchfork, mumblecore try-hard kogi XOXO roof party la croix cardigan neutra retro tattooed copper mug. Meditation lomo biodiesel scenester",
+      "Fam VHS enamel pin try-hard echo park raw denim unicorn fanny pack vape authentic. Helvetica fixie church-key, small batch jianbing messenger bag scenester +1",
+      "Fam VHS enamel pin try-hard echo park raw denim unicorn fanny pack vape authentic. Helvetica fixie church-key, small batch jianbing messenger bag scenester +1",
+    ],
+    company: "SKILLS",
+  },
+  {
+    id: "rec61x18GVY99hQq5",
+    order: 1,
+    title: "Engineering Intern",
+    dates: "May 2014 - September 2015",
+    duties: [
+      "I'm baby woke mumblecore stumptown enamel pin. Snackwave prism pork belly, blog vape four loko sriracha messenger bag jean shorts DIY bushwick VHS. Banjo post-ironic hella af, palo santo craft beer gluten-free.",
+      "YOLO drinking vinegar chambray pok pok selfies quinoa kinfolk pitchfork street art la croix unicorn DIY. Woke offal jianbing venmo tote bag, palo santo subway tile slow-carb post-ironic pug ugh taxidermy squid.",
+      "Pour-over glossier chambray umami 3 wolf moon. Iceland kale chips asymmetrical craft beer actually forage, biodiesel tattooed fingerstache. Pork belly lomo man braid, portland pitchfork locavore man bun prism.",
+    ],
+    company: "SEND",
+  },
+];
